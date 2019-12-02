@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>admin</title>
+</head>
+
+<body onload="initAdmin()">
+
+    <select id="sortBy" onchange="onStatusSortChange(this)">
+        <option value="username">Name</option>
+        <option value="timeStamp">Last Login</option>
+    </select>
+
+    <table border="1">
+        <tbody class="board">
+
+        </tbody>
+    </table>
+
+
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+    <script src="storageService.js"></script>
+</body>
+
+</html>
